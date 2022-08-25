@@ -26,7 +26,7 @@ public class UserTests extends BaseTest {
         validateResponseTime(response,5000);
         printResponse(response);
     }
-    @Test
+    @Test(enabled = false)
     public void getUserByUserName(){
         response = rb.createRequest()
                 .get(BASE_URL + USER + "/xatakany");
