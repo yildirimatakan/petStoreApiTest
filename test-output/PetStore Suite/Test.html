@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 26 00:20:45 TRT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>16 seconds (16140 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='storeTests.StoreTests.deleteOrderById()'><b>deleteOrderById</b><br>Test class: storeTests.StoreTests</td>
+<td></td>
+<td>0</td>
+<td>storeTests.StoreTests@103f852</td></tr>
+<tr>
+<td title='petTests.PetTests.deletePet()'><b>deletePet</b><br>Test class: petTests.PetTests</td>
+<td></td>
+<td>0</td>
+<td>petTests.PetTests@6dde5c8c</td></tr>
+<tr>
+<td title='userTests.UserTests.getUserLogin()'><b>getUserLogin</b><br>Test class: userTests.UserTests</td>
+<td></td>
+<td>0</td>
+<td>userTests.UserTests@587c290d</td></tr>
+<tr>
+<td title='petTests.PetTests.updatePetWithFormData()'><b>updatePetWithFormData</b><br>Test class: petTests.PetTests</td>
+<td></td>
+<td>0</td>
+<td>petTests.PetTests@6dde5c8c</td></tr>
+<tr>
+<td title='userTests.UserTests.getUserLogout()'><b>getUserLogout</b><br>Test class: userTests.UserTests</td>
+<td></td>
+<td>0</td>
+<td>userTests.UserTests@587c290d</td></tr>
+<tr>
+<td title='userTests.UserTests.getUserByUserName()'><b>getUserByUserName</b><br>Test class: userTests.UserTests</td>
+<td></td>
+<td>0</td>
+<td>userTests.UserTests@587c290d</td></tr>
+<tr>
+<td title='petTests.PetTests.getPetById()'><b>getPetById</b><br>Test class: petTests.PetTests</td>
+<td></td>
+<td>0</td>
+<td>petTests.PetTests@6dde5c8c</td></tr>
+<tr>
+<td title='petTests.PetTests.uploadPetImage()'><b>uploadPetImage</b><br>Test class: petTests.PetTests</td>
+<td></td>
+<td>1</td>
+<td>petTests.PetTests@6dde5c8c</td></tr>
+<tr>
+<td title='petTests.PetTests.findPetByStatus()'><b>findPetByStatus</b><br>Test class: petTests.PetTests</td>
+<td></td>
+<td>1</td>
+<td>petTests.PetTests@6dde5c8c</td></tr>
+<tr>
+<td title='storeTests.StoreTests.placeOrder()'><b>placeOrder</b><br>Test class: storeTests.StoreTests<br>Parameters: {"id":8,"petId":9223372000001097001,"quantity":5,"shipDate":"1992-10-19T07:30:21.197Z","status":"placed","complete":true}</td>
+<td></td>
+<td>0</td>
+<td>storeTests.StoreTests@103f852</td></tr>
+<tr>
+<td title='userTests.UserTests.postCreateUserFromList()'><b>postCreateUserFromList</b><br>Test class: userTests.UserTests<br>Parameters: [{"id":1,"username":"username_test1","firstName":"firstName_test1","lastName":"lastName_test1","email":"email_test1","password":"password_test1","phone":"phone_test1","userStatus":1},{"id":2,"username":"username_test2","firstName":"firstName_test2","lastName":"lastName_test2","email":"email_test2","password":"password_test2","phone":"phone_test2","userStatus":2},{"id":3,"username":"username_test3","firstName":"firstName_test3","lastName":"lastName_test3","email":"email_test3","password":"password_test3","phone":"phone_test3","userStatus":3},{"id":4,"username":"username_test4","firstName":"firstName_test4","lastName":"lastName_test4","email":"email_test4","password":"password_test4","phone":"phone_test4","userStatus":4}]</td>
+<td></td>
+<td>0</td>
+<td>userTests.UserTests@587c290d</td></tr>
+<tr>
+<td title='petTests.PetTests.updatePet()'><b>updatePet</b><br>Test class: petTests.PetTests<br>Parameters: {"id":9223372000001097001,"category":{"id":1,"name":"Dog"},"name":"Pet New Added Updated","photoUrls":["BC","KY","AY"],"tags":[{"id":2,"name":"Tag No 1 Updated"}],"status":"Available"}</td>
+<td></td>
+<td>0</td>
+<td>petTests.PetTests@6dde5c8c</td></tr>
+<tr>
+<td title='storeTests.StoreTests.getInventory()'><b>getInventory</b><br>Test class: storeTests.StoreTests</td>
+<td></td>
+<td>0</td>
+<td>storeTests.StoreTests@103f852</td></tr>
+<tr>
+<td title='petTests.PetTests.addNewPet()'><b>addNewPet</b><br>Test class: petTests.PetTests<br>Parameters: {"id":9223372000001097001,"category":{"id":1,"name":"Dog"},"name":"Pet New Added","photoUrls":["BC","KY","AY"],"tags":[{"id":1,"name":"Tag No 1"}],"status":"Available"}</td>
+<td></td>
+<td>3</td>
+<td>petTests.PetTests@6dde5c8c</td></tr>
+<tr>
+<td title='storeTests.StoreTests.getOrderById()'><b>getOrderById</b><br>Test class: storeTests.StoreTests</td>
+<td></td>
+<td>0</td>
+<td>storeTests.StoreTests@103f852</td></tr>
+<tr>
+<td title='userTests.UserTests.postCreateUser()'><b>postCreateUser</b><br>Test class: userTests.UserTests<br>Parameters: {"id":18,"username":"xatakany","firstName":"Atakan","lastName":"Yildirim","email":"atakan@mail.com","password":"atakan123","phone":"+9055555587","userStatus":0}</td>
+<td></td>
+<td>0</td>
+<td>userTests.UserTests@587c290d</td></tr>
+</table><p>
+</body>
+</html>

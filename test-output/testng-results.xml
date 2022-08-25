@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="20" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-26T00:20:45 TRT" name="PetStore Suite" finished-at="2022-08-26T00:21:02 TRT" duration-ms="16140">
+    <groups>
+    </groups>
+    <test started-at="2022-08-26T00:20:45 TRT" name="Test" finished-at="2022-08-26T00:21:02 TRT" duration-ms="16140">
+      <class name="petTests.PetTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:petTests.PetTests@6dde5c8c]" started-at="2022-08-26T00:20:45 TRT" name="setUp" finished-at="2022-08-26T00:20:45 TRT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addNewPet(java.lang.String)[pri:0, instance:petTests.PetTests@6dde5c8c]" started-at="2022-08-26T00:20:46 TRT" name="addNewPet" data-provider="petProvider" finished-at="2022-08-26T00:20:49 TRT" duration-ms="3003" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id":9223372000001097001,"category":{"id":1,"name":"Dog"},"name":"Pet New Added","photoUrls":["BC","KY","AY"],"tags":[{"id":1,"name":"Tag No 1"}],"status":"Available"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewPet -->
+        <test-method signature="getPetById()[pri:0, instance:petTests.PetTests@6dde5c8c]" started-at="2022-08-26T00:20:49 TRT" name="getPetById" finished-at="2022-08-26T00:20:49 TRT" duration-ms="768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPetById -->
+        <test-method signature="updatePetWithFormData()[pri:0, instance:petTests.PetTests@6dde5c8c]" started-at="2022-08-26T00:20:49 TRT" name="updatePetWithFormData" finished-at="2022-08-26T00:20:50 TRT" duration-ms="804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePetWithFormData -->
+        <test-method signature="uploadPetImage()[pri:0, instance:petTests.PetTests@6dde5c8c]" started-at="2022-08-26T00:20:50 TRT" name="uploadPetImage" finished-at="2022-08-26T00:20:52 TRT" duration-ms="1678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadPetImage -->
+        <test-method signature="updatePet(java.lang.String)[pri:0, instance:petTests.PetTests@6dde5c8c]" started-at="2022-08-26T00:20:52 TRT" name="updatePet" data-provider="petPutProvider" finished-at="2022-08-26T00:20:53 TRT" duration-ms="876" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id":9223372000001097001,"category":{"id":1,"name":"Dog"},"name":"Pet New Added Updated","photoUrls":["BC","KY","AY"],"tags":[{"id":2,"name":"Tag No 1 Updated"}],"status":"Available"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePet -->
+        <test-method signature="findPetByStatus()[pri:0, instance:petTests.PetTests@6dde5c8c]" started-at="2022-08-26T00:20:53 TRT" name="findPetByStatus" finished-at="2022-08-26T00:20:54 TRT" duration-ms="1237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findPetByStatus -->
+        <test-method signature="deletePet()[pri:0, instance:petTests.PetTests@6dde5c8c]" started-at="2022-08-26T00:20:54 TRT" name="deletePet" finished-at="2022-08-26T00:20:55 TRT" duration-ms="781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePet -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:petTests.PetTests@6dde5c8c]" started-at="2022-08-26T00:21:02 TRT" name="tearDown" finished-at="2022-08-26T00:21:02 TRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- petTests.PetTests -->
+      <class name="storeTests.StoreTests">
+        <test-method signature="placeOrder(java.lang.String)[pri:0, instance:storeTests.StoreTests@103f852]" started-at="2022-08-26T00:20:55 TRT" name="placeOrder" data-provider="orderProvider" finished-at="2022-08-26T00:20:56 TRT" duration-ms="818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id":8,"petId":9223372000001097001,"quantity":5,"shipDate":"1992-10-19T07:30:21.197Z","status":"placed","complete":true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrder -->
+        <test-method signature="getOrderById()[pri:0, instance:storeTests.StoreTests@103f852]" started-at="2022-08-26T00:20:56 TRT" name="getOrderById" finished-at="2022-08-26T00:20:56 TRT" duration-ms="777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrderById -->
+        <test-method signature="getInventory()[pri:0, instance:storeTests.StoreTests@103f852]" started-at="2022-08-26T00:20:56 TRT" name="getInventory" finished-at="2022-08-26T00:20:57 TRT" duration-ms="752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInventory -->
+        <test-method signature="deleteOrderById()[pri:0, instance:storeTests.StoreTests@103f852]" started-at="2022-08-26T00:20:57 TRT" name="deleteOrderById" finished-at="2022-08-26T00:20:58 TRT" duration-ms="795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteOrderById -->
+      </class> <!-- storeTests.StoreTests -->
+      <class name="userTests.UserTests">
+        <test-method signature="postCreateUser(java.lang.String)[pri:0, instance:userTests.UserTests@587c290d]" started-at="2022-08-26T00:20:58 TRT" name="postCreateUser" data-provider="userProvider" finished-at="2022-08-26T00:20:59 TRT" duration-ms="772" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id":18,"username":"xatakany","firstName":"Atakan","lastName":"Yildirim","email":"atakan@mail.com","password":"atakan123","phone":"+9055555587","userStatus":0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCreateUser -->
+        <test-method signature="postCreateUserFromList(java.lang.String)[pri:0, instance:userTests.UserTests@587c290d]" started-at="2022-08-26T00:20:59 TRT" name="postCreateUserFromList" data-provider="userListProvider" finished-at="2022-08-26T00:20:59 TRT" duration-ms="739" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[{"id":1,"username":"username_test1","firstName":"firstName_test1","lastName":"lastName_test1","email":"email_test1","password":"password_test1","phone":"phone_test1","userStatus":1},{"id":2,"username":"username_test2","firstName":"firstName_test2","lastName":"lastName_test2","email":"email_test2","password":"password_test2","phone":"phone_test2","userStatus":2},{"id":3,"username":"username_test3","firstName":"firstName_test3","lastName":"lastName_test3","email":"email_test3","password":"password_test3","phone":"phone_test3","userStatus":3},{"id":4,"username":"username_test4","firstName":"firstName_test4","lastName":"lastName_test4","email":"email_test4","password":"password_test4","phone":"phone_test4","userStatus":4}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCreateUserFromList -->
+        <test-method signature="getUserByUserName()[pri:0, instance:userTests.UserTests@587c290d]" started-at="2022-08-26T00:20:59 TRT" name="getUserByUserName" finished-at="2022-08-26T00:21:00 TRT" duration-ms="740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserByUserName -->
+        <test-method signature="getUserLogin()[pri:0, instance:userTests.UserTests@587c290d]" started-at="2022-08-26T00:21:00 TRT" name="getUserLogin" finished-at="2022-08-26T00:21:01 TRT" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserLogin -->
+        <test-method signature="getUserLogout()[pri:0, instance:userTests.UserTests@587c290d]" started-at="2022-08-26T00:21:01 TRT" name="getUserLogout" finished-at="2022-08-26T00:21:02 TRT" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserLogout -->
+      </class> <!-- userTests.UserTests -->
+    </test> <!-- Test -->
+  </suite> <!-- PetStore Suite -->
+</testng-results>
