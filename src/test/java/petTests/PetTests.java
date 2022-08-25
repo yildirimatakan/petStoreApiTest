@@ -12,7 +12,7 @@ import static utils.Assertions.*;
 
 public class PetTests extends BaseTest {
     //region FIND PET BY ID
-    @Test()
+    @Test(enabled = false)
     public void getPetById(){
         response = rb.createRequest()
                 .get(BASE_URL+GET_PET+"9223372000001097001");

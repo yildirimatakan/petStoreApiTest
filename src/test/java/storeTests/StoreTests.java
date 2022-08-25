@@ -27,7 +27,7 @@ public class StoreTests extends BaseTest {
         validateResponseTime(response,5000);
         printResponse(response);
     }
-    @Test
+    @Test(enabled = false)
     public void getOrderById(){
         response = rb.createRequest()
                 .get(BASE_URL+STORE_ORDER+"8");
